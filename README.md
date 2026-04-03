@@ -53,6 +53,8 @@ This project is experimental and not certified. Not recommended for use in syste
 
 MIT — free to use, modify, and distribute.
 
+Attention: Built using the power of vibe coding :)
+
 Author: Pavel Bobkin
 Github: koolkid90
 
