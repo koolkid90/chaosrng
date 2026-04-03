@@ -8,19 +8,19 @@ The generator mixes two independent time sources (Date.now and performance.now),
 The internal state (T3) is 64‑bit, updated non‑linearly and irreversibly.
 
 🧠 12 timers
-Timer	Name	Function
-T1	System Clock	Date.now() — milliseconds since 1970
-T2	Precision Timer	performance.now() — microseconds
-T3	Memory	64‑bit internal state
-T4	Distorter	Time distortion (multiply/divide)
-T5	Splitter	Slice count (1000–10000)
-T6	Picker	Selects a specific slice
-T7	Hidden Noise	Jitter, interrupts, OS noise
-T8	Switch	Enables/disables byte output
-T9	Watchdog	Controls the switch based on the last byte
-T10	Start Point	Initialization moment (unique)
-T11	Blot	Random 0x00 insertion
-T12	Mute	Pauses of 1–100 ticks
+Timer	Name	Function |||
+T1	System Clock	Date.now() — milliseconds since 1970 |||
+T2	Precision Timer	performance.now() — microseconds |||
+T3	Memory	64‑bit internal state |||
+T4	Distorter	Time distortion (multiply/divide) |||
+T5	Splitter	Slice count (1000–10000) |||
+T6	Picker	Selects a specific slice |||
+T7	Hidden Noise	Jitter, interrupts, OS noise |||
+T8	Switch	Enables/disables byte output |||
+T9	Watchdog	Controls the switch based on the last byte |||
+T10	Start Point	Initialization moment (unique) |||
+T11	Blot	Random 0x00 insertion |||
+T12	Mute	Pauses of 1–100 ticks |||
 
 📊 Entropy
 
