@@ -1,6 +1,9 @@
 # chaosrng
 ChaosRNG is an experimental random byte generator built on 12 independent timers, non‑linear transformations, and feedback loops. It does not rely on standard PRNGs (mt_rand, random_bytes) or special hardware — just JavaScript and a browser. Not for cryptographic use without independent audit.
 
+Security considerations
+ChaosRNG offers ~90-120 bits of practical security. Suitable for: passwords, session tokens, nonces, key generation for symmetric ciphers (when combined with a KDF). Not recommended for long-term cryptographic keys without additional hardening. Timing attacks are possible if an adversary can measure call intervals with high precision.
+
 * ⚠️ LEGAL NOTICE:
  * ChaosRNG is a research/experimental generator.
  * It is NOT certified for cryptographic use under FIPS 140-3, 
