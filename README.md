@@ -1,6 +1,5 @@
 # chaosrng
-ChaosRNG is an experimental random byte generator built on 12 independent timers, non‑linear transformations, and feedback loops. It does not rely on standard PRNGs (mt_rand, random_bytes) or special hardware — just JavaScript and a browser. Not for cryptographic use without independent audi
-
+ChaosRNG is an experimental random byte generator built on 12 independent timers, non‑linear transformations, and feedback loops. It does not rely on standard PRNGs (mt_rand, random_bytes) or special hardware — just JavaScript and a browser. Not for cryptographic use without independent audit.
 🔧 How it works
 
 The generator mixes two independent time sources (Date.now and performance.now), passes them through a distorter, splits into a random number of slices (1000–10000), adds random pauses (T12), random zero bytes (T11), and a controlled switch (T8/T9) that protects against timing attacks.
